@@ -16,11 +16,13 @@ export default class Items extends Component {
 
   render() {
     return (
-      <div>
-        <p>
-          {this.props.items.name}
-        </p>
-      </div>
+      <tr>
+        <td>{this.props.index + 1}</td>
+        <td>{this.props.items.name}</td>
+        <td>{this.props.items.notes}</td>
+        <td>{this.props.items.quantity}</td>
+        <td>{this.props.items.weight}</td>
+      </tr>
     );
   }
 }
