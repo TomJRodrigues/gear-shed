@@ -6,14 +6,25 @@ export default class Category extends Component {
 		super(props);
 
 		//function binding
-
+		this.handleInputChange = this.handleInputChange.bind(this);
 
 		//state
-
+		this.state = {
+			name: "Add New Resource",
+		}
 
 	} 
 
 	//functions
+
+	handleInputChange(event) {    // allows typing in input fields and checking boxes
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+    this.setState({
+      [name]: value
+    });
+  }
 
   render() {
     return (
@@ -27,6 +38,9 @@ export default class Category extends Component {
       			/>
       		)}
       	)}
+      	<form>
+      		<input type="text" name="name" value={this.state.name} onChange={this.handleInputChange}/>
+      	</form>
       </div>
     );
   }
