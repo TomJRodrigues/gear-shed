@@ -6,10 +6,11 @@ export default class Category extends Component {
 	constructor(props) {
 		super(props);
 
-		//function binding
+		// function binding
 		this.handleInputChange = this.handleInputChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
 
-		//state
+		// state
 		this.state = {
 			name: "Add New Resource",
 			notes: "Notes",
@@ -19,7 +20,18 @@ export default class Category extends Component {
 
 	} 
 
-	//functions
+	// functions
+
+	handleSubmit(event) {					// packages up the current state in JSON and sends it up to App.js
+		event.preventDefault();
+		const newItem = {
+			name: this.state.name,
+			notes: this.state.notes,
+			quantity: this.state.quantity,
+			weight: this.state.weight,
+		}
+		this.props.addNewItem(newItem, this.props.index);
+	}
 
 	handleInputChange(event) {    // allows typing in input fields and checking boxes
     const target = event.target;
@@ -78,6 +90,8 @@ export default class Category extends Component {
       			Weight
       		</label>
       		<input type="text" name="weight" value={this.state.weight} onChange={this.handleInputChange} />
+      		<br/>
+      		<button className="btn btn-xs btn-primary" onClick={this.handleSubmit}>Submit</button>
       	</form>
       </div>
     );

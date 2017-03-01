@@ -8,6 +8,7 @@ class App extends Component {
     super();
 
     //function binding
+    this.addNewItem = this.addNewItem.bind(this);
 
     this.state = {
       resources: [
@@ -80,6 +81,12 @@ class App extends Component {
 
   //functions
 
+  addNewItem(newItem, index) {
+    const tempState = this.state;
+    tempState.resources[index].items.push(newItem);
+    this.setState(tempState);
+  }
+
   render() {
     return (
       <div className="container">
@@ -90,6 +97,7 @@ class App extends Component {
             <Category
               index={index}
               items={resource}
+              addNewItem={this.addNewItem}
             />
           )}
         )}
