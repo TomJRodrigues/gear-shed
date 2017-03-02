@@ -10,6 +10,7 @@ export default class Category extends Component {
 		this.handleInputChange = this.handleInputChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleDeleteHelper = this.handleDeleteHelper.bind(this);
+		this.handleCheckHelper = this.handleCheckHelper.bind(this);
 
 		// state
 		this.state = {
@@ -17,6 +18,7 @@ export default class Category extends Component {
 			notes: "Notes",
 			quantity: 1,
 			weight: 0,
+			selected: false,
 		}
 
 	} 
@@ -47,6 +49,10 @@ export default class Category extends Component {
   	this.props.deleteItem(this.props.index, itemIndex);
   }
 
+  handleCheckHelper(itemIndex) {
+  	this.props.checkItem(this.props.index, itemIndex);
+  }
+
   render() {
     return (
       <div>
@@ -55,6 +61,7 @@ export default class Category extends Component {
           <thead>
             <tr>
               <th>#</th>
+              <th></th>
               <th>Name</th>
               <th>Notes</th>
               <th>Quantity</th>
@@ -69,11 +76,13 @@ export default class Category extends Component {
 		      				index={index}
 		      				items={resource}
 		      				handleDeleteHelper={this.handleDeleteHelper}
+		      				handleCheckHelper={this.handleCheckHelper}
 		      			/>
 		      		)}
 		      	)}
 		      	<tr>
 		      		<td>+</td>
+		      		<td></td>
 		      		<td><input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} size="16" /></td>
 		      		<td><input type="text" name="notes" value={this.state.notes} onChange={this.handleInputChange} size="28"/></td>
 		      		<td><input type="text" name="quantity" value={this.state.quantity} onChange={this.handleInputChange} size="4" /></td>
