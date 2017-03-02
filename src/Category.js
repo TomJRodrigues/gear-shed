@@ -9,6 +9,7 @@ export default class Category extends Component {
 		// function binding
 		this.handleInputChange = this.handleInputChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleDeleteHelper = this.handleDeleteHelper.bind(this);
 
 		// state
 		this.state = {
@@ -42,6 +43,10 @@ export default class Category extends Component {
     });
   }
 
+  handleDeleteHelper(itemIndex) {				// bubbles up indices to App's state
+  	this.props.deleteItem(this.props.index, itemIndex);
+  }
+
   render() {
     return (
       <div>
@@ -54,6 +59,7 @@ export default class Category extends Component {
               <th>Notes</th>
               <th>Quantity</th>
               <th>Weight</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -62,6 +68,7 @@ export default class Category extends Component {
 		      			<Items
 		      				index={index}
 		      				items={resource}
+		      				handleDeleteHelper={this.handleDeleteHelper}
 		      			/>
 		      		)}
 		      	)}
@@ -74,22 +81,19 @@ export default class Category extends Component {
       		<label>
       			Name
       		</label>
-      		<input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} />
-      		<br/>
+      		<input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} size="16" />
       		<label>
       			Notes
       		</label>
-      		<input type="text" name="notes" value={this.state.notes} onChange={this.handleInputChange} />
-      		<br/>
+      		<input type="text" name="notes" value={this.state.notes} onChange={this.handleInputChange} size = "24"/>
       		<label>
     				Quantity
       		</label>
-      		<input type="text" name="quantity" value={this.state.quantity} onChange={this.handleInputChange} />
-      		<br/>
+      		<input type="text" name="quantity" value={this.state.quantity} onChange={this.handleInputChange} size = "4" />
       		<label>
       			Weight
       		</label>
-      		<input type="text" name="weight" value={this.state.weight} onChange={this.handleInputChange} />
+      		<input type="text" name="weight" value={this.state.weight} onChange={this.handleInputChange} size = "5" />
       		<br/>
       		<button className="btn btn-xs btn-primary" onClick={this.handleSubmit}>Submit</button>
       	</form>

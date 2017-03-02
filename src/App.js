@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from './Header.js';
-import PageTitle from './PageTitle.js';
+// import Header from './Header.js';
+// import PageTitle from './PageTitle.js';
 import Category from './Category.js';
 
 class App extends Component {
@@ -9,7 +9,9 @@ class App extends Component {
 
     //function binding
     this.addNewItem = this.addNewItem.bind(this);
+    this.deleteItem = this.deleteItem.bind(this);
 
+    // state
     this.state = {
       resources: [
         {
@@ -81,6 +83,12 @@ class App extends Component {
 
   //functions
 
+  deleteItem(categoryIndex, itemIndex) {
+    const tempState = this.state;
+    tempState.resources[categoryIndex].items.splice(itemIndex, 1);
+    this.setState(tempState);
+  }
+
   addNewItem(newItem, index) {
     const tempState = this.state;
     tempState.resources[index].items.push(newItem);
@@ -90,14 +98,13 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <Header />
-        <PageTitle />
         {this.state.resources.map((resource, index) => {
           return (
             <Category
               index={index}
               items={resource}
               addNewItem={this.addNewItem}
+              deleteItem={this.deleteItem}
             />
           )}
         )}

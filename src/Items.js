@@ -4,15 +4,18 @@ export default class Items extends Component {
 	constructor(props) {
 		super(props);
 
-		//function binding
+		// function binding
+    this.handleDelete = this.handleDelete.bind(this);
 
-
-		//state
-
+		// state
 
 	} 
 
-	//functions
+	// functions
+  handleDelete(event) {     // this will bubble up item index to App with a helper
+    event.preventDefault();
+    this.props.handleDeleteHelper(this.props.index);
+  }
 
   render() {
     return (
@@ -22,6 +25,7 @@ export default class Items extends Component {
         <td>{this.props.items.notes}</td>
         <td>{this.props.items.quantity}</td>
         <td>{this.props.items.weight}</td>
+        <td><button className="btn btn-xs btn-danger" onClick={this.handleDelete}>Delete</button></td>
       </tr>
     );
   }
