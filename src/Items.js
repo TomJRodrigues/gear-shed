@@ -19,7 +19,6 @@ export default class Items extends Component {
   }
 
   handleCheck(event) {    // bubbles up item index to App with a helper
-    event.preventDefault();
     this.props.handleCheckHelper(this.props.index);
   }
 

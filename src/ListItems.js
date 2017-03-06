@@ -6,7 +6,6 @@ export default class ListItems extends Component {
 
 		// function binding
     this.handleDelete = this.handleDelete.bind(this);
-    this.handleCheck = this.handleCheck.bind(this);
 
 		// state
 
@@ -16,11 +15,6 @@ export default class ListItems extends Component {
   handleDelete(event) {     // this will bubble up item index to App with a helper
     event.preventDefault();
     this.props.handleDeleteHelper(this.props.index);
-  }
-
-  handleCheck(event) {    // bubbles up item index to App with a helper
-    event.preventDefault();
-    this.props.handleCheckHelper(this.props.index);
   }
 
   render() {
