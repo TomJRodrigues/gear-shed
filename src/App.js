@@ -13,9 +13,32 @@ class App extends Component {
     this.addNewItem = this.addNewItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.checkItem = this.checkItem.bind(this);
+    this.addCheckedToPackingList = this.addCheckedToPackingList.bind(this);
 
     // state
     this.state = {
+      packinglist: [
+        {
+          category: "Climbing",
+          items: [
+            {
+              name: "Harness",
+              quantity: 2,
+              notes: "Black Diamond Momentum",
+              weight: 1250,
+              selected: true,
+            },
+            {
+              name: "Shoes",
+              quantity: 8,
+              notes: "Small",
+              weight: 320,
+              selected: true,
+            },
+          ]
+        },
+      ],
+
       resources: [
         {
           category: "Climbing",
@@ -102,6 +125,8 @@ class App extends Component {
 
   checkItem(categoryIndex, itemIndex) {
     const tempState = this.state;
+    console.log(categoryIndex);
+    console.log(itemIndex);
     console.log(tempState.resources[categoryIndex].items[itemIndex].selected)
     tempState.resources[categoryIndex].items[itemIndex].selected = !tempState.resources[categoryIndex].items[itemIndex].selected
     console.log(tempState.resources[categoryIndex].items[itemIndex].selected);
@@ -114,11 +139,25 @@ class App extends Component {
     this.setState(tempState);
   }
 
+  addCheckedToPackingList(event) {
+    event.preventDefault();
+    console.log("button does not do anything right now");
+  }
+
   render() {
     return (
       <div className="container">
         <Login />
-        <PackingList />
+        <br/>
+        <button className="btn btn-sm btn-primary" onClick={this.addCheckedToPackingList}>Add Selected to Packing List</button>
+        {this.state.packinglist.map((resource, index) => {
+          return (
+            <PackingList
+              index={index}
+              items={resource}
+            />
+          )}
+        )}
         {this.state.resources.map((resource, index) => {
           return (
             <Category
@@ -134,5 +173,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
