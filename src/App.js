@@ -14,6 +14,7 @@ class App extends Component {
     this.deleteItem = this.deleteItem.bind(this);
     this.checkItem = this.checkItem.bind(this);
     this.addCheckedToPackingList = this.addCheckedToPackingList.bind(this);
+    this.filterSelected = this.filterSelected.bind(this);
 
     // state
     this.state = {
@@ -21,20 +22,20 @@ class App extends Component {
         {
           category: "Climbing",
           items: [
-            {
-              name: "Harness",
-              quantity: 2,
-              notes: "Black Diamond Momentum",
-              weight: 1250,
-              selected: true,
-            },
-            {
-              name: "Shoes",
-              quantity: 8,
-              notes: "Small",
-              weight: 320,
-              selected: true,
-            },
+            // {
+            //   name: "Harness",
+            //   quantity: 2,
+            //   notes: "Black Diamond Momentum",
+            //   weight: 1250,
+            //   selected: true,
+            // },
+            // {
+            //   name: "Shoes",
+            //   quantity: 8,
+            //   notes: "Small",
+            //   weight: 320,
+            //   selected: true,
+            // },
           ]
         },
       ],
@@ -123,25 +124,44 @@ class App extends Component {
     this.setState(tempState);
   }
 
-  checkItem(categoryIndex, itemIndex) {
+  checkItem(categoryIndex, itemIndex) {     // updates state with an item's checked status
     const tempState = this.state;
-    console.log(categoryIndex);
-    console.log(itemIndex);
-    console.log(tempState.resources[categoryIndex].items[itemIndex].selected)
     tempState.resources[categoryIndex].items[itemIndex].selected = !tempState.resources[categoryIndex].items[itemIndex].selected
-    console.log(tempState.resources[categoryIndex].items[itemIndex].selected);
     this.setState(tempState);
   }
 
-  addNewItem(newItem, index) {
+  addNewItem(newItem, index) {      // Adds a new item to a category
     const tempState = this.state;
     tempState.resources[index].items.push(newItem);
     this.setState(tempState);
   }
 
-  addCheckedToPackingList(event) {
+  filterSelected(categoryItems) {
+    console.log(categoryItems);
+    const tempState = this.state;
+    tempState.packinglist[0].items = [
+            {
+              name: "Harness",
+              quantity: 2,
+              notes: "Black Diamond Momentum",
+              weight: 1250,
+              selected: true,
+            },
+            {
+              name: "Shoes",
+              quantity: 8,
+              notes: "Small",
+              weight: 320,
+              selected: true,
+            },
+          ];
+    this.setState(tempState);
+  }
+
+  addCheckedToPackingList(event) {      // submits all checked items in shed to populate Packing List
     event.preventDefault();
     console.log("button does not do anything right now");
+    this.filterSelected(0);
   }
 
   render() {
@@ -150,6 +170,7 @@ class App extends Component {
         <Login />
         <br/>
         <button className="btn btn-sm btn-primary" onClick={this.addCheckedToPackingList}>Add Selected to Packing List</button>
+        <h2>Packing List: Overnight Climbing Trip</h2>
         {this.state.packinglist.map((resource, index) => {
           return (
             <PackingList
@@ -158,6 +179,8 @@ class App extends Component {
             />
           )}
         )}
+        <hr/>
+        <hr/>
         {this.state.resources.map((resource, index) => {
           return (
             <Category
