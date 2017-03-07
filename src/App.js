@@ -88,7 +88,7 @@ class App extends Component {
               quantity: 1,
               notes: "Mountain Hardwear Lamina",
               weight: 1300,
-              selected: false,
+              selected: true,
             },
             {
               name: "30 degree synthetic",
@@ -125,22 +125,20 @@ class App extends Component {
 
   filterSelected() {                // returns array of items where selected=true to add to Packing List
     const tempState = this.state;
-    let filteredArray = [];
+    let filteredItemArray = [];
     tempState.resources.map(function(resource, index) {
       resource.items.filter(function(item, index) {
         if (item.selected == true) {
-          filteredArray.push(item)
+          filteredItemArray.push(item)
         }
       })
     })
-    console.log(filteredArray);
-    console.log("made it to end");
-    this.addToPackingList(filteredArray);
+    this.addToPackingList(filteredItemArray);
   }
 
-  addToPackingList(filteredArray) {
+  addToPackingList(filteredItemArray) {     // actually updates state with the selected items
     const tempState = this.state;
-    tempState.packinglist[0].items = filteredArray;
+    tempState.packinglist[0].items = filteredItemArray;
     this.setState(tempState);
   }
 

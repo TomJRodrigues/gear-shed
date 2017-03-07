@@ -17,7 +17,6 @@ export default class PackingList extends Component {
   render() {
     return (
       <div>
-      	<h3>{this.props.items.category}</h3>
           <Table responsive>
           <thead>
             <tr>
