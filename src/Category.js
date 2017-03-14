@@ -95,3 +95,11 @@ export default class Category extends Component {
     );
   }
 }
+
+Category.propTypes = {
+	index: React.PropTypes.number,
+	items: React.PropTypes.object.isRequired,
+	addNewItem: React.PropTypes.func,
+	deleteItem: React.PropTypes.func,
+	checkItem: React.PropTypes.func,
+};

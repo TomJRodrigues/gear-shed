@@ -128,7 +128,7 @@ class App extends Component {
     let filteredItemArray = [];
     tempState.resources.map(function(resource, index) {
       resource.items.filter(function(item, index) {
-        if (item.selected == true) {
+        if (item.selected === true) {
           filteredItemArray.push(item)
         }
       })

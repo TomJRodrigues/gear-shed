@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
 export default class PageTitle extends Component {
+
   render() {
-    return (
+  	const pageTitle = "My Gear Shed"
+    return pageTitle && (
       <div>
-	      <h2>My Gear Shed</h2>
+	      <h2>{pageTitle}</h2>
       </div>
     );
   }
