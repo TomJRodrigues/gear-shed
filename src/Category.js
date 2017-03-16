@@ -65,7 +65,7 @@ export default class Category extends Component {
               <th>Name</th>
               <th>Notes</th>
               <th>Quantity</th>
-              <th>Weight</th>
+              <th>Weight (ea)</th>
               <th></th>
             </tr>
           </thead>

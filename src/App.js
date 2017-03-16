@@ -23,6 +23,20 @@ class App extends Component {
         {
           category: "Climbing",
           items: [
+          {
+              name: "Harness",
+              quantity: 2,
+              notes: "Black Diamond Momentum",
+              weight: 1250,
+              selected: true,
+            },
+            {
+              name: "Chalkbag",
+              quantity: 4,
+              notes: "Filled",
+              weight: 120,
+              selected: true,
+            },
           ]
         },
       ],
@@ -163,7 +177,6 @@ class App extends Component {
             />
           )}
         )}
-        <hr/>
         <hr/>
         {this.state.resources.map((resource, index) => {
           return (

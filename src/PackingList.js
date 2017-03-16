@@ -20,11 +20,17 @@ export default class PackingList extends Component {
   }
 
   render() {
-    const data = [{name: 'harness', value: 400}, {name: 'chalkbag', value: 300},
-                  {name: 'carabiners', value: 300}, {name: 'helmet', value: 200},
-                  {name: 'rope', value: 278}, {name: 'shoes', value: 189}];
+    console.log(this.props.items);
 
-    const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8', '#E83F6F']; //  https://coolors.co/
+    const data = this.props.items.items.map((resource) => {
+      return (
+        {name: resource.name,
+         value: resource.weight,
+        }
+      )}
+    )
+
+    const COLORS = ['#0088FE', '#00C49F', '#8884D8', '#FFBB28', '#FF8042', '#E83F6F']; //  https://coolors.co/
 
     return (
       <div>
@@ -35,7 +41,7 @@ export default class PackingList extends Component {
             <th>Name</th>
             <th>Notes</th>
             <th>Quantity</th>
-            <th>Weight</th>
+            <th>Weight (ea)</th>
             <th></th>
           </tr>
         </thead>
@@ -56,8 +62,7 @@ export default class PackingList extends Component {
           <PieChart width={600} height={300}>
             <Pie
               isAnimationActive={false} 
-              data={data} 
-              fill="8884d8"
+              data={data}
             >
               {data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/> )
               }
