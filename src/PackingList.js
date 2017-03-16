@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import ListItems from './ListItems.js';
-import { PieChart, Pie, Legend } from 'recharts';
+import { PieChart, Pie, Legend, Sector, Cell } from 'recharts';
 
 export default class PackingList extends Component {
 	constructor(props) {
@@ -20,9 +20,11 @@ export default class PackingList extends Component {
   }
 
   render() {
-    let data01 = [{name: 'harness', value: 400}, {name: 'chalkbag', value: 300},
+    const data = [{name: 'harness', value: 400}, {name: 'chalkbag', value: 300},
                   {name: 'carabiners', value: 300}, {name: 'helmet', value: 200},
                   {name: 'rope', value: 278}, {name: 'shoes', value: 189}];
+
+    const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8', '#E83F6F']; //  https://coolors.co/
 
     return (
       <div>
@@ -51,16 +53,13 @@ export default class PackingList extends Component {
         </tbody>
         </Table>
         <div>
-          <PieChart width={800} height={400}>
+          <PieChart width={600} height={300}>
             <Pie
               isAnimationActive={false} 
-              data={data01} 
+              data={data} 
               fill="8884d8"
             >
-              {          
-
-
-                /* http://recharts.org/#/en-US/examples/PieChartWithCustomizedLabel */
+              {data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/> )
               }
 
             </Pie>
