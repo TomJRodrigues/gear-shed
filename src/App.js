@@ -157,6 +157,7 @@ class App extends Component {
         {this.state.packinglist.map((resource, index) => {
           return (
             <PackingList
+              key={index}
               index={index}
               items={resource}
             />
@@ -167,6 +168,7 @@ class App extends Component {
         {this.state.resources.map((resource, index) => {
           return (
             <Category
+              key={index}
               index={index}
               items={resource}
               addNewItem={this.addNewItem}

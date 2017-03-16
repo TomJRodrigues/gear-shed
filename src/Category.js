@@ -73,6 +73,7 @@ export default class Category extends Component {
           	{this.props.items.items.map((resource, index) => {
 		      		return (
 		      			<Items
+		      				key={index}
 		      				index={index}
 		      				items={resource}
 		      				handleDeleteHelper={this.handleDeleteHelper}

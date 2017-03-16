@@ -52,7 +52,18 @@ export default class PackingList extends Component {
         </Table>
         <div>
           <PieChart width={800} height={400}>
-            <Pie isAnimationActive={false} data={data01}/>
+            <Pie
+              isAnimationActive={false} 
+              data={data01} 
+              fill="8884d8"
+            >
+              {          
+
+
+                /* http://recharts.org/#/en-US/examples/PieChartWithCustomizedLabel */
+              }
+
+            </Pie>
             <Legend />
           </PieChart>
         </div>
