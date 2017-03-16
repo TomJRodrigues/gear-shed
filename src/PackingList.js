@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import ListItems from './ListItems.js';
-import { PieChart, Pie, Legend, Sector, Cell } from 'recharts';
+import { PieChart, Pie, Legend, Cell } from 'recharts';
 
 export default class PackingList extends Component {
 	constructor(props) {
@@ -9,20 +9,28 @@ export default class PackingList extends Component {
 
 		// function binding
     this.reduceToWeights = this.reduceToWeights.bind(this);
+    this.handleDeleteHelper = this.handleDeleteHelper.bind(this);
+    this.handleCheckHelper = this.handleCheckHelper.bind(this);
 
 		// state
 	} 
 
 	// functions
 
+  handleDeleteHelper(itemIndex) {       // bubbles up indices to App's state
+    this.props.deleteItem(this.props.index, itemIndex);
+  }
+
+  handleCheckHelper(itemIndex) {
+    this.props.checkItem(this.props.index, itemIndex);
+  }
+
   reduceToWeights() {
 
   }
 
   render() {
-    console.log(this.props.items);
-
-    const data = this.props.items.items.map((resource) => {
+    const data = this.props.items.items.map((resource) => {       // packages data for pie chart
       return (
         {name: resource.name,
          value: resource.weight,
@@ -49,6 +57,7 @@ export default class PackingList extends Component {
           {this.props.items.items.map((resource, index) => {
             return (
               <ListItems
+                key={index}
                 index={index}
                 items={resource}
                 handleDeleteHelper={this.handleDeleteHelper}
@@ -64,9 +73,13 @@ export default class PackingList extends Component {
               isAnimationActive={false} 
               data={data}
             >
-              {data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/> )
+              {data.map((entry, index) => 
+                  <Cell 
+                    key={index}
+                    fill={COLORS[index % COLORS.length]}
+                  />
+                )
               }
-
             </Pie>
             <Legend />
           </PieChart>
