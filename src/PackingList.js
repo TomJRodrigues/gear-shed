@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import ListItems from './ListItems.js';
-import { PieChart, Pie, Legend, Cell } from 'recharts';
+import { PieChart, Pie, Legend, Cell, Tooltip } from 'recharts';
 
 export default class PackingList extends Component {
 	constructor(props) {
@@ -68,10 +68,12 @@ export default class PackingList extends Component {
         </tbody>
         </Table>
         <div>
-          <PieChart width={600} height={300}>
+          <PieChart width={650} height={325}>
             <Pie
               isAnimationActive={false} 
               data={data}
+              label
+              cy="49.5%"
             >
               {data.map((entry, index) => 
                   <Cell 

@@ -159,7 +159,7 @@ class App extends Component {
       <div className="container">
         <Login />
         <br/>
-        <button className="btn btn-sm btn-primary" onClick={this.addCheckedToPackingList}>Add Selected to Packing List</button>
+        <button className="btn btn-sm btn-primary" onClick={this.addCheckedToPackingList}>Update Packing List</button>
         <h2>Packing List: Overnight Climbing Trip</h2>
         {this.state.packinglist.map((resource, index) => {
           return (
