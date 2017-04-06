@@ -18,7 +18,7 @@ export default class PackingList extends Component {
 	// functions
 
   handleDeleteHelper(itemIndex) {       // bubbles up indices to App's state
-    this.props.deleteItem(this.props.index, itemIndex);
+    this.props.deletePackingItem(this.props.index, itemIndex);
   }
 
   handleCheckHelper(itemIndex) {

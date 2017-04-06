@@ -16,6 +16,7 @@ class App extends Component {
     this.addCheckedToPackingList = this.addCheckedToPackingList.bind(this);
     this.filterSelected = this.filterSelected.bind(this);
     this.addToPackingList = this.addToPackingList.bind(this);
+    this.deletePackingItem = this.deletePackingItem.bind(this);
 
     // state
     this.state = {
@@ -111,6 +112,12 @@ class App extends Component {
     this.setState(tempState);
   }
 
+  deletePackingItem(categoryIndex, itemIndex) {
+    const tempState = this.state;
+    tempState.packinglist[categoryIndex].items.splice(itemIndex, 1);
+    this.setState(tempState);
+  }
+
   checkItem(categoryIndex, itemIndex) {     // updates state with an item's checked status
     const tempState = this.state;
     tempState.resources[categoryIndex].items[itemIndex].selected = !tempState.resources[categoryIndex].items[itemIndex].selected
@@ -160,6 +167,7 @@ class App extends Component {
               key={index}
               index={index}
               items={resource}
+              deletePackingItem={this.deletePackingItem}
             />
           )}
         )}
