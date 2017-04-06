@@ -17,11 +17,13 @@ class App extends Component {
     this.filterSelected = this.filterSelected.bind(this);
     this.addToPackingList = this.addToPackingList.bind(this);
     this.deletePackingItem = this.deletePackingItem.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
 
     // state
     this.state = {
       packinglist: [
         {
+          listTitle: "List Title",
           category: "Climbing",
           items: [
           ]
@@ -154,13 +156,24 @@ class App extends Component {
     this.filterSelected();
   }
 
+  handleInputChange(event) {    // allows typing in input fields and checking boxes
+    console.log("foo");
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+    const tempState = this.state;
+    tempState.packinglist[0].listTitle = value;
+    this.setState(tempState);
+  }
+
   render() {
     return (
       <div className="container">
         <Login />
         <br/>
+        <input type="text" name="listTitle" value={this.state.packinglist[0].listTitle} onChange={this.handleInputChange} />
         <button className="btn btn-sm btn-primary" onClick={this.addCheckedToPackingList}>Update Packing List</button>
-        <h2>Packing List: Overnight Climbing Trip</h2>
+        <h2>Packing List: {this.state.packinglist[0].listTitle}</h2>
         {this.state.packinglist.map((resource, index) => {
           return (
             <PackingList
