@@ -8,7 +8,6 @@ export default class ListItems extends Component {
     this.handleDelete = this.handleDelete.bind(this);
 
 		// state
-
 	} 
 
 	// functions
@@ -30,3 +29,8 @@ export default class ListItems extends Component {
     );
   }
 }
+
+ListItems.propTypes = {
+  index: React.PropTypes.number,
+  items: React.PropTypes.object.isRequired,
+};

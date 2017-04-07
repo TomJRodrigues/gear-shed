@@ -9,7 +9,6 @@ export default class Items extends Component {
     this.handleCheck = this.handleCheck.bind(this);
 
 		// state
-
 	} 
 
 	// functions
@@ -26,7 +25,7 @@ export default class Items extends Component {
     return (
       <tr>
         <td>{this.props.index + 1}</td>
-        <td><input type="checkbox" checked={this.props.items.selected} onChange={this.handleCheck} /></td>
+        <td>{<input type="checkbox" checked={this.props.items.selected} onChange={this.handleCheck} />}</td>
         <td>{this.props.items.name}</td>
         <td>{this.props.items.notes}</td>
         <td>{this.props.items.quantity}</td>

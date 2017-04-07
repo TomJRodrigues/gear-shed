@@ -27,11 +27,13 @@ export default class Category extends Component {
 
 	handleSubmit(event) {					// packages up the current state in JSON and sends it up to App.js
 		event.preventDefault();
+		const weight = Number(this.state.weight);
 		const newItem = {
 			name: this.state.name,
 			notes: this.state.notes,
 			quantity: this.state.quantity,
-			weight: this.state.weight,
+			weight: weight,
+			selected: this.state.selected,
 		}
 		this.props.addNewItem(newItem, this.props.index);
 	}

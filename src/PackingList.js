@@ -8,7 +8,6 @@ export default class PackingList extends Component {
 		super(props);
 
 		// function binding
-    this.reduceToWeights = this.reduceToWeights.bind(this);
     this.handleDeleteHelper = this.handleDeleteHelper.bind(this);
     this.handleCheckHelper = this.handleCheckHelper.bind(this);
 
@@ -23,10 +22,6 @@ export default class PackingList extends Component {
 
   handleCheckHelper(itemIndex) {
     this.props.checkItem(this.props.index, itemIndex);
-  }
-
-  reduceToWeights() {
-
   }
 
   render() {
