@@ -157,7 +157,6 @@ class App extends Component {
   }
 
   handleInputChange(event) {    // allows typing in input fields and checking boxes
-    console.log("foo");
     const target = event.target;
     const value = target.value;
     const name = target.name;
