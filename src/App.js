@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import Header from './Header.js';
-import Login from './Login.js';
+// import Login from './Login.js';
 // import PageTitle from './PageTitle.js';
 import PackingList from './PackingList.js';
 import Category from './Category.js';
@@ -169,10 +169,9 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <Login />
         <br/>
-        <input type="text" name="listTitle" value={this.state.packinglist[0].listTitle} onChange={this.handleInputChange} />
         <button className="btn btn-sm btn-primary" onClick={this.addCheckedToPackingList}>Update Packing List</button>
+        <input type="text" name="listTitle" value={this.state.packinglist[0].listTitle} onChange={this.handleInputChange} />
         <h2>Packing List: {this.state.packinglist[0].listTitle}</h2>
         {this.state.packinglist.map((resource, index) => {
           return (
