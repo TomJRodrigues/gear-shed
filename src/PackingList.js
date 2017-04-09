@@ -35,7 +35,11 @@ export default class PackingList extends Component {
 
     const COLORS = ['#0088FE', '#00C49F', '#8884D8', '#FFBB28', '#FF8042', 
                     '#E83F6F', '#1CCAD8']; //  https://coolors.co/
-                    
+
+    if (data == false) {
+      return null;
+    }
+
     return (
       <div>
         <Table responsive>

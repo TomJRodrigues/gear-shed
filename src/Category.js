@@ -64,11 +64,12 @@ export default class Category extends Component {
   }
 
   render() {
-  	const categoryHeader = <h3 onClick={this.handleClick} className="inline-block">{this.props.items.category}</h3>
+  	const categoryHeader = <h3 className="inline-block">{this.props.items.category}</h3>
+
   	if (this.state.visible === true) {
   		return (
       <div>
-      	<div>
+      	<div onClick={this.handleClick} className="hover-hand">
       		<div className="glyphicon glyphicon-triangle-bottom"></div>{categoryHeader}
       	</div>
     		<Table responsive>
@@ -111,7 +112,7 @@ export default class Category extends Component {
   	}
   	else {
   		return (
-  			<div>
+  			<div onClick={this.handleClick} className="hover-hand">
   				<div className="glyphicon glyphicon-triangle-right"></div>{categoryHeader}
   			</div>
   		);
