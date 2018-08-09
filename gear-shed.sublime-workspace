@@ -1,0 +1,644 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"handle",
+				"handleClick"
+			],
+			[
+				"delete",
+				"deletePackingItem"
+			],
+			[
+				"han",
+				"handleCheckHelper"
+			],
+			[
+				"handl",
+				"handleDeleteHelper"
+			],
+			[
+				"Prop",
+				"propTypes"
+			],
+			[
+				"true",
+				"trueItemsArray"
+			],
+			[
+				"Pack",
+				"PackingList"
+			],
+			[
+				"tru",
+				"trueItems"
+			],
+			[
+				"add",
+				"addCheckedToPackingList"
+			],
+			[
+				"item",
+				"itemIndex"
+			],
+			[
+				"categ",
+				"categoryIndex"
+			],
+			[
+				"Cat",
+				"CategoryHeader"
+			],
+			[
+				"hanl",
+				"handleDelete"
+			],
+			[
+				"hand",
+				"handleDelete"
+			],
+			[
+				"change",
+				"changeCheckBox"
+			],
+			[
+				"hanld",
+				"handleCheck"
+			],
+			[
+				"Add",
+				"AddSubject"
+			],
+			[
+				"addNew",
+				"addNewSubject"
+			],
+			[
+				"leng",
+				"lengthOfItems"
+			],
+			[
+				"new",
+				"newResourceUrl"
+			],
+			[
+				"number",
+				"numberOfResources"
+			],
+			[
+				"align",
+				"align-content"
+			],
+			[
+				"larg",
+				"largestPrime"
+			],
+			[
+				"to",
+				"to_s"
+			],
+			[
+				"pick",
+				"pickAnOrange"
+			],
+			[
+				"Oran",
+				"OrangeTree"
+			],
+			[
+				"en",
+				"englishNumber"
+			],
+			[
+				"beginning",
+				"beginning_year"
+			],
+			[
+				"minut",
+				"minutes_in_a_decade"
+			],
+			[
+				"hours",
+				"hours_in_a_year"
+			],
+			[
+				"yea",
+				"years_in_a_decade"
+			],
+			[
+				"minutes",
+				"minutes_in_an_hour"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"update",
+				"update_columns"
+			],
+			[
+				"asser",
+				"assert_match"
+			],
+			[
+				"for",
+				"form_control"
+			],
+			[
+				"password",
+				"password_confirmation"
+			],
+			[
+				"assert",
+				"assert_not"
+			],
+			[
+				"ass",
+				"assert_select"
+			],
+			[
+				"si",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"al",
+				"text-align"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"background-",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 628,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Tom/programming/react_projects/gear-shed/src"
+	],
+	"file_history":
+	[
+		"/Users/Tom/programming/react_projects/gear-shed/src/PackingList.js",
+		"/Users/Tom/programming/react_projects/gear-shed/src/index.css",
+		"/Users/Tom/programming/react_projects/gear-shed/src/Category.js",
+		"/Users/Tom/programming/react_projects/gear-shed/src/App.js",
+		"/Users/Tom/programming/react_projects/gear-shed/src/App.css",
+		"/Users/Tom/programming/hackoregon/transportation-frontend/src/components/Map/index.js",
+		"/Users/Tom/programming/hackoregon/transportation-frontend/src/index.js",
+		"/Users/Tom/programming/hackoregon/transportation-frontend/src/state/app.js",
+		"/Users/Tom/programming/hackoregon/transportation-frontend/src/components/App/index.js",
+		"/Users/Tom/programming/react_projects/gear-shed/src/ListItems.js",
+		"/Users/Tom/programming/react_projects/gear-shed/src/Items.js",
+		"/Users/Tom/programming/websites/TomJRodrigues.github.io/index.html",
+		"/Users/Tom/programming/react_projects/gear-shed/src/PageTitle.js",
+		"/Users/Tom/programming/react_projects/gear-shed/src/CodePen",
+		"/Users/Tom/programming/react_projects/BookmarkManager/src/Subject.js",
+		"/Users/Tom/programming/react_projects/BookmarkManager/src/Resource.js",
+		"/Users/Tom/programming/react_projects/BookmarkManager/src/App.js",
+		"/Users/Tom/programming/react_projects/gear-shed/public/index.html",
+		"/Users/Tom/programming/react_projects/gear-shed/src/CategoryHeader.js",
+		"/Users/Tom/programming/react_projects/gear-shed/src/Header.js",
+		"/Users/Tom/programming/react_projects/BookmarkManager/src/Header.js",
+		"/Users/Tom/programming/react_projects/BookmarkManager/src/AddSubject.js",
+		"/Users/Tom/programming/react_projects/BookmarkManager/public/index.html",
+		"/Applications/MAMP/Library/lib/python2.7/plat-mac/macerrors.py",
+		"/Users/Tom/programming/react_projects/rope-log/src/App.js",
+		"/Users/Tom/programming/react_projects/rope-log/src/RopeTable.js",
+		"/Users/Tom/programming/react_projects/rope-log/src/FilterableRopeTable.js",
+		"/Users/Tom/programming/react_projects/rope-log/src/RopeRow.js",
+		"/Users/Tom/programming/react_projects/rope-log/src/Footer.js",
+		"/Users/Tom/programming/react_projects/rope-log/src/Header.js",
+		"/Users/Tom/programming/react_projects/BookmarkManager/src/Footer.js",
+		"/Users/Tom/programming/react_projects/BookmarkManager/src/Navbar.js",
+		"/Users/Tom/programming/react_projects/BookmarkManager/src/App.css",
+		"/Users/Tom/programming/react_projects/BookerManager/src/index.js",
+		"/Users/Tom/programming/the_odin_project/paint-grid/js/script.js",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/06_timer/timer_spec.rb",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/06_timer/timer.rb",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/05_book_titles/book.rb",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/04_pig_latin/pig_latin_spec.rb",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/04_pig_latin/pig_latin.rb",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/03_simon_says/simon_says_spec.rb",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/03_simon_says/simon_says.rb",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/02_calculator/calculator_spec.rb",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/02_calculator/calculator.rb",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/01_temperature/temperature.rb",
+		"/Users/Tom/programming/the_odin_project/learn_ruby/00_hello/hello.rb",
+		"/Users/Tom/programming/the_odin_project/ruby-tdd/README.md",
+		"/Users/Tom/programming/the_odin_project/zombie/spec/lib/zombie_spec.rb",
+		"/Users/Tom/programming/zombie/spec/lib/zombie_spec.rb",
+		"/Users/Tom/programming/zombie/lib/zombie.rb",
+		"/Users/Tom/programming/zombie/spec/lib/zombie.rb",
+		"/Users/Tom/Downloads/font-bundles-master/README.md",
+		"/Users/Tom/programming/the_odin_project/learn-to-program-work/ltp7.rb",
+		"/Users/Tom/programming/the_odin_project/learn-to-program-work/ltp1.rb",
+		"/Users/Tom/programming/the_odin_project/learn-to-program-work/ltp8.rb",
+		"/Users/Tom/programming/the_odin_project/learn-to-program-work/ch8.rb",
+		"/Users/Tom/programming/native-mountains/options.html",
+		"/Users/Tom/programming/native-mountains/options.css",
+		"/Users/Tom/programming/native-mountains/index.html",
+		"/Users/Tom/programming/the_odin_project/learn-to-program-work/ch8 original.rb",
+		"/Users/Tom/programming/the_odin_project/learn-to-program-work/ltp5.rb",
+		"/Users/Tom/programming/the_odin_project/learn-to-program-work/ltp6.rb",
+		"/Users/Tom/programming/the_odin_project/learn-to-program-work/ltp4.rb",
+		"/Users/Tom/Desktop/ltp1.rb",
+		"/Users/Tom/programming/the_odin_project/ltp1.rb",
+		"/Users/Tom/Dropbox/Programming/Mountain Names/Native Mountains/content.js",
+		"/Users/Tom/Dropbox/Programming/Mountain Names/Native Mountains/index.html",
+		"/Users/Tom/Dropbox/Programming/Mountain Names/Native Mountains/options.html",
+		"/Users/Tom/programming/the_odin_project/paint-grid/css/style.css",
+		"/Users/Tom/programming/the_odin_project/paint-grid/index.html",
+		"/Users/Tom/programming/websites/TomJRodrigues.github.io/README.md",
+		"/Users/Tom/programming/the_odin_project/google-homepage/index.html",
+		"/Users/Tom/programming/the_odin_project/paint-grid/README.md",
+		"/Users/Tom/programming/native-mountains/README.md",
+		"/Users/Tom/programming/odinproject/git_test/README.md",
+		"/Users/Tom/programming/rails/gear_closet/app/views/sessions/new.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/config/environments/production.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/layouts/_header.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/user_mailer/password_reset.text.erb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/user_mailer/password_reset.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/app/models/user.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/controllers/password_resets_controller.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/controllers/users_controller_test.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/integration/password_resets_test.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/password_resets/new.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/password_resets/edit.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/test/mailers/user_mailer_test.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/mailers/user_mailer.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/mailers/previews/user_mailer_preview.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/controllers/users_controller.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/users/_user.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/users/index.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/test/integration/users_index_test.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/users/edit.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/users/new.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/users/_form.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/config/routes.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/integration/site_layout_test.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/fixtures/users.yml",
+		"/Users/Tom/programming/rails/gear_closet/test/integration/users_edit_test.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/helpers/sessions_helper.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/helpers/users_helper.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/assets/stylesheets/custom.css.scss",
+		"/Users/Tom/programming/rails/gear_closet/Gemfile",
+		"/Users/Tom/programming/rails/gear_closet/app/assets/stylesheets/users.scss",
+		"/Users/Tom/programming/rails/gear_closet/app/controllers/sessions_controller.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/controllers/account_activations_controller.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/integration/users_signup_test.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/models/user_test.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/mailers/application_mailer.rb",
+		"/Users/Tom/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Tom/programming/rails/gear_closet/config/environments/test.rb",
+		"/Users/Tom/programming/rails/gear_closet/config/environments/development.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/user_mailer/account_activation.text.erb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/user_mailer/account_activation.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/db/seeds.rb",
+		"/Users/Tom/programming/rails/gear_closet/db/migrate/20160425210758_add_activation_to_users.rb",
+		"/Users/Tom/programming/rails/gear_closet/db/migrate/20160425203721_add_admin_to_users.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/integration/users_login_test.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/test_helper.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/helpers/sessions_helper_test.rb",
+		"/Users/Tom/programming/rails/gear_closet/test/helpers/test_helper.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/assets/javascripts/application.js",
+		"/Users/Tom/programming/rails/gear_closet/app/controllers/application_controller.rb",
+		"/Users/Tom/programming/rails/gear_closet/config/puma.rb",
+		"/Users/Tom/programming/rails/gear_closet/app/views/layouts/application.html.erb",
+		"/Users/Tom/programming/rails/gear_closet/Procfile",
+		"/Users/Tom/programming/rails/gear_closet/app/assets/stylesheets/application.scss"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"weight",
+			"name",
+			"handleDelete",
+			"push",
+			"item",
+			"NewSubject",
+			"newSubject",
+			"onChange",
+			"changeCheck",
+			"url",
+			"hasBeenRead",
+			"handleSubmit",
+			"newResourceUrl",
+			"newResourceTitle",
+			"handleUrlTyping",
+			"Resource",
+			"resource",
+			"newResourceTitle",
+			"          ",
+			"handleTyping",
+			"event",
+			"string",
+			"img",
+			"#cccccc",
+			"lightgrey",
+			"assert_match",
+			"home",
+			"Home",
+			"article",
+			"item",
+			"indent",
+			"background-color",
+			"td",
+			"is_active_sidebar",
+			"get_template_part",
+			"get_template",
+			"a:",
+			"footer",
+			"edd_metabox_fields_save",
+			"product_notes",
+			"edd_product_files",
+			"http",
+			"edd_get_purchase_link",
+			"edd",
+			"font",
+			".woff",
+			"fa",
+			"color",
+			"text",
+			"form",
+			"\t\t\t\t\t\t\t\t",
+			"\n\t\t",
+			"col-md",
+			"container",
+			"padding-top",
+			"body",
+			"navbar-brand",
+			"album-2",
+			"Mountain Calling",
+			"album-2",
+			"Mountain Calling",
+			"album-2",
+			"album-3",
+			"album-2",
+			"Mountain Calling",
+			"Portraits of Helena",
+			"album-1",
+			"album-6",
+			"album-5",
+			"album-4",
+			"album-3",
+			"album-2",
+			"album-1",
+			"data",
+			"tropes",
+			"logo",
+			".png",
+			"len",
+			"images/",
+			"align"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"s",
+			"#f2f2f2",
+			"#cccccc",
+			"about",
+			"help",
+			"item",
+			"",
+			"album-6",
+			"A House",
+			"album-5",
+			"Climb",
+			"A Tree Story",
+			"album-4",
+			"album-3",
+			"Travels and Troves",
+			"Summer Lives",
+			"Mountain Calling",
+			"album-2",
+			"images/people/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								338,
+								338
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "gear-shed.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/programming/react_projects/gear-shed/gear-shed.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 192.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

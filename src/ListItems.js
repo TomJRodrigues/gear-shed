@@ -24,7 +24,7 @@ export default class ListItems extends Component {
         <td>{this.props.items.notes}</td>
         <td>{this.props.items.quantity}</td>
         <td>{this.props.items.weight}</td>
-        <td><button className="btn btn-xs btn-danger" onClick={this.handleDelete}>Delete</button></td>
+        <td><button className="btn btn-sm btn-danger" onClick={this.handleDelete}>Delete</button></td>
       </tr>
     );
   }

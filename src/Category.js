@@ -103,7 +103,7 @@ export default class Category extends Component {
 	      		<td><input type="text" name="notes" value={this.state.notes} onChange={this.handleInputChange} size="28"/></td>
 	      		<td><input type="text" name="quantity" value={this.state.quantity} onChange={this.handleInputChange} size="4" /></td>
 	      		<td><input type="text" name="weight" value={this.state.weight} onChange={this.handleInputChange} size="5" /></td>
-	      		<td><button className="btn btn-xs btn-primary" onClick={this.handleSubmit}>Submit</button></td>
+	      		<td><button className="btn btn-sm btn-primary" onClick={this.handleSubmit}>Submit</button></td>
 	      	</tr>
         </tbody>
       	</Table>
